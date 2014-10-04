@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/hello_mad_about_background">
+    
+    <Button
+        android:id="@+id/fetch_data_from_mhealth_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mhealth_label" />
+    
+    <Button
+        android:id="@+id/show_two_player_communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/two_player_com_label" />
+    
+    <Button
+        android:id="@+id/communication_acknowledge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acknowledge_label" />
+    
+    <Button
+        android:id="@+id/communication_back_main_activity_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comm_back_main_button_text" />
+    	
+</LinearLayout>

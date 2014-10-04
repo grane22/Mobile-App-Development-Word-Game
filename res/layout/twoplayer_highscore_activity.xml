@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical" 
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:gravity="center" 
+   android:padding="20dip"
+   android:background="@color/word_game_background">
+    
+
+    <TextView 
+      android:id="@+id/twoplayer_gameplaying_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:text="@string/twoplayer_highScoreTextLabel"
+      android:freezesText="true"/>
+    
+    <TextView 
+      android:id="@+id/twoplayer_emptyList_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:gravity="center"
+      android:freezesText="true"/>
+    
+    
+   <ListView 
+      android:id="@+id/twoplayer_listView1" 
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent" />
+
+</LinearLayout>

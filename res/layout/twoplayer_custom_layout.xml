@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>  	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:padding="5dip"
+    android:background="@color/word_game_background">
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*">
+        
+        <TableRow>
+        	<TextView 
+        	    android:id="@+id/twoplayer_gameplaying_text_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="12sp"
+		        android:textStyle="bold"
+		        android:freezesText="true"/>    
+        </TableRow>
+        <TableRow
+            android:weightSum="3">
+            <Button 
+        	    android:id="@+id/twoPlayerYourScoreButton"
+        	    android:textSize="12sp" 
+        	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+        	    android:text="@string/twoplayer_yourScoreLabel"/>
+            
+            <Button 
+        	    android:id="@+id/twoPlayerTargetScoreButton"
+        	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+        	    android:textSize="12sp" />
+      
+            <Button
+                android:id="@+id/twoPlayerOppScoreButton"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+                android:text="@string/twoplayer_oppScoreLabel"/>
+            
+        </TableRow>
+        <TableRow
+            android:weightSum="4">
+        	 <Button 
+        	    android:id="@+id/pauseTwoPlayerWordGame"
+        	    android:textSize="12sp" 
+        	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+        	    android:text="@string/pause_word_game"/>   
+        	    
+        	 <Button 
+        	    android:id="@+id/quitTwoPlayerWordGame"
+        	    android:textSize="12sp" 
+        	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+        	    android:text="@string/twoplayer_quitWordGameLabel"/>   
+        	    
+        	<Button
+                android:id="@+id/twoPlayerShowSelectedWord"
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+                android:textSize="12sp" />
+        	
+        	<Button
+                android:id="@+id/twoPlayerClearSelectedWord"
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+                android:textSize="12sp" 
+                android:text="@string/clear_word"/>
+        	
+        	
+        </TableRow>
+        
+        <edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGameView
+	        android:id="@+id/twoPlayerCustomWordGameView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="20dip"/>
+        
+    </TableLayout>
+</LinearLayout>
+

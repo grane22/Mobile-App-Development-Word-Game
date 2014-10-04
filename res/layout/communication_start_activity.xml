@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/hello_mad_about_background">
+
+    <EditText
+        android:id="@+id/commnunication_enter_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="textNoSuggestions"
+        android:hint="Enter your name...">
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/communication_send_name_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/com_send_name_button_label" />
+    
+    <EditText
+        android:id="@+id/commnunication_ping_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="textNoSuggestions"
+        android:hint="Send msg to opponent...">
+    </EditText>
+    
+    <Button
+        android:id="@+id/communication_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/com_start_button_label" />
+    
+    <Button
+        android:id="@+id/communication_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/comm_back_button_text" />
+    
+    <TextView
+        android:id="@+id/communication_start_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:freezesText="true"/>
+    	
+</LinearLayout>

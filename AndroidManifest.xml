@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.gauravrane"
+    android:versionCode="11"
+    android:versionName="2.11" >
+
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="edu.neu.madcourse.gauravrane.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="edu.neu.madcourse.gauravrane.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+	
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/main_app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.neu.madcourse.gauravrane.HelloMad"
+            android:label="@string/main_app_title" >
+            <intent-filter
+                android:label="@string/main_app_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver
+            android:name="edu.neu.madcourse.gauravrane.gcm.BroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="edu.neu.madcourse.gauravrane" />
+            </intent-filter>
+        </receiver>
+        <service android:name="edu.neu.madcourse.gauravrane.gcm.BroadcastService" />
+        
+         <activity
+            android:name="edu.neu.madcourse.gauravrane.communication.CommunicationActivity"
+            android:label="@string/communication_label"
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.communication.CommunicationStartPage"
+            android:label="@string/communication_label"
+            android:screenOrientation="portrait"/>
+        
+         <activity 
+            android:name="edu.neu.madcourse.gauravrane.communication.ComGSMMainActivity"
+            android:label="@string/communication_label"
+            android:screenOrientation="portrait"/>
+         
+         <activity 
+            android:name="edu.neu.madcourse.gauravrane.communication.CommunicationAcknowledge"
+            android:label="@string/acknowledge_label"
+            android:screenOrientation="portrait"/>
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.HelloMadAbout"
+			android:label="@string/about_label" >
+		</activity>
+		
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.dictionary.Dictionary"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+			android:label="@string/dictionary_app_name" >
+		</activity>
+		
+        <activity
+            android:name="edu.neu.madcourse.gauravrane.dictionary.DictionaryAcknowledge"
+            android:label="@string/dictionary_acknowledgements_label">
+        </activity>
+		
+        <activity
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGameStart"
+            android:label="@string/wordgame_app_name"
+            android:screenOrientation="portrait">            
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGame"
+            android:label="@string/wordgame_app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGameAcknowledge"
+            android:label="@string/acknowledge_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGameFinish"
+            android:label="@string/game_over_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.Prefs"
+            android:label="@string/word_game_settings"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGameInstruction"
+            android:label="@string/word_game_play"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.wordgame.WordGamePaused"
+            android:label="@string/word_game_paused_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/WordPauseTheme">           
+        </activity>
+        
+        <!-- two player game -->
+        <activity
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGameStart"
+            android:label="@string/twoPlayer_label"
+            android:screenOrientation="portrait">            
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGame"
+            android:label="@string/twoPlayer_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGameAcknowledge"
+            android:label="@string/acknowledge_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGameFinish"
+            android:label="@string/game_over_label"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerPrefs"
+            android:label="@string/word_game_settings"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGameInstruction"
+            android:label="@string/word_game_play"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerHighScore"
+            android:label="@string/twoplayer_highScoreButtonLabel"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerWordGamePaused"
+            android:label="@string/word_game_paused_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/WordPauseTheme">           
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.twoplayer.TwoPlayerNewGameOption"
+            android:label="@string/twoplayer_newGameSettings"
+            android:screenOrientation="portrait">           
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.sudoku.Sudoku"
+            android:label="@string/sudoku_app_name">
+        </activity>
+        
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.sudoku.About"
+            android:label="@string/about_sudoku_title"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.sudoku.Prefs"
+            android:label="@string/sudoku_settings_title">
+        </activity>
+        <activity 
+            android:name="edu.neu.madcourse.gauravrane.sudoku.Game"
+            android:label="@string/game_title"/>
+        
+    </application>
+
+</manifest>

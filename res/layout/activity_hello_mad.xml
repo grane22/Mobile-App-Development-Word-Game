@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hello_mad_background"
+    android:gravity="center_vertical"
+    tools:context=".HelloMad" >
+    
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:orientation="vertical">
+       
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_label"/>
+    
+    <Button
+        android:id="@+id/generate_error_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_error"/>
+    
+    <Button
+        android:id="@+id/sudoku_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sudoku_app_name"/>
+    
+    <Button
+        android:id="@+id/dictionary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary_app_name"/>
+    
+    <Button 
+        android:id="@+id/wordgame_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wordgame_app_name"/>
+    
+    <Button 
+        android:id="@+id/communication_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_label"/>
+    
+    <Button 
+        android:id="@+id/twoPlayerWordGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/twoPlayer_label"/>
+    
+    <Button 
+        android:id="@+id/trickiestPartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trickiest_part_title_label"/>
+    
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quit_label"/>
+    
+    </LinearLayout>
+
+</ScrollView>

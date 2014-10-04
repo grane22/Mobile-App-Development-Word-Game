@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>  	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:padding="30dip"
+    android:background="@color/word_game_background">
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*">
+        
+        <TableRow>
+            <Button 
+        	    android:id="@+id/pauseWordGame"
+        	    android:textSize="14sp" 
+        	    android:text="@string/pause_word_game"/>
+      
+            <Button
+                android:id="@+id/hintButton"
+                android:textSize="14sp"
+                android:text="@string/hintButtonText"/>
+            <Button
+                android:id="@+id/clearSelectedWord"
+                android:textSize="14sp" 
+                android:text="@string/clear_word"/>
+            
+        </TableRow>
+        <TableRow>
+        	<Button 
+        	    android:id="@+id/totalScore"
+        	    android:textSize="12sp"
+        	    android:text="@string/total_score_word_game"/>    
+        	    
+        	<Button
+                android:id="@+id/showSelectedWord"
+                android:textSize="12sp" />
+        	
+        	<Button 
+        	    android:id="@+id/timerCount"
+        	    android:textSize="12sp" />
+        	
+        	
+        </TableRow>
+        
+        <edu.neu.madcourse.gauravrane.wordgame.WordGameView
+	        android:id="@+id/customWordGameView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="20dip"/>
+        
+    </TableLayout>
+</LinearLayout>
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Hello Mad Strings -->
+    <string name="main_app_name">NUMAD14S-GauravRane</string>
+    <string name="main_app_title">Gaurav Rane</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="generate_error">Generate Error</string>
+    
+    <!-- Hello Mad About Strings -->
+    <string name="my_name">Gaurav Rane</string>
+    <string name="my_email">gaurav.v.rane@gmail.com</string>
+    <string name="my_school_year">2nd Year MS</string>
+    <string name="my_degree_program">Computer Science</string>
+    
+	<!-- Sudoku App Strings -->
+	<string name="sudoku_app_name">Sudoku</string>
+	<string name="sudoku_main_title">Android Sudoku</string>
+	<string name="sudoku_settings_title">Sudoku settings</string>
+	<string name="about_sudoku_title">About Android Sudoku</string>
+	<string name="about_sudoku_text">\
+	Sudoku is a logic-based number placement puzzle.
+	Starting with a partially completed 9x9 grid, the
+	objective is to fill the grid so that each
+	row, each column, and each of the 3x3 boxes
+	(also called <i>blocks</i>) contains the digits
+	1 to 9 exactly once.
+	</string>
+	
+	<!-- Dictionary App Strings -->
+	<string name="dictionary_app_name">Test Dictionary</string>
+	<string name="dictionary_return_to_menu_label">Return To Menu</string>
+	<string name="dictionary_clear_label">Clear</string>
+	<string name="dictionary_acknowledgements_label">Acknowledgements</string>
+	<string name="dictionary_acknowledgements">Following links have been helpful \n\n
+	    										Help on saving state on rotation:\n http://android-er.blogspot.com/2011/09/onsaveinstancestate-and.html\n
+	    										General android reference link:\n http://www.vogella.com/tutorials/android.html\n
+	    										beep sound clip \n http://www.soundjay.com/censor-beep-sound-effect.html \n\n
+	    										Thanks to Pratik Dhandaria for clarifying my programming doubts along with Shang Ma who gave me valuable
+	    										suggestions and corrections in the dictionary app \n 
+	    										</string>
+	<!-- Word Game App Name -->	    										
+	<string name="wordgame_app_name">Word Game</string>
+	<string name="wordgame_acknowledgements">Following links have been useful- \n\n
+	    									Creating custom views \n
+	    									http://www.jayway.com/2012/07/03/creating-custom-android-views-part-2-how-padding-works-and-how-to-draw-your-own-content/ \n\n
+	    									http://www.soundjay.com/  \n\n
+	    									code reused from Hello Android Text and Snake Game from API
+	    									General android reference link \n 
+	    									http://www.vogella.com/tutorials/android.html\n\n
+	    									All sound clips \n
+	    									http://www.soundjay.com/ \n\n
+	    									Thanks to Shang Ma and Zhongie Mao for their suggestions on Word Game app. 
+	    									</string>
+	<string name="clear_word">Clear</string>
+	<string name="total_score_word_game">Score</string>
+	<string name="pause_word_game">Pause</string>
+	<string name="resume_word_game">Resume</string>
+	<string name="replay_word_game_label">Replay?</string>
+	<string name="main_menu_label">Main Menu</string>
+	<string name="game_over_label">Game Over!</string>
+	<string name="word_game_play">How To Play!</string>
+	<string name="word_game_settings">Settings</string>
+	<string name="word_game_instructions">Steps to play Word Game \n\n
+	    								 Start a new Game to get a brand new Puzzle\n
+	    								 Try to form as many words in 90 seconds to get a best score\n
+	    								 Hit check button to see if word exists\n 
+	    								 Hit clear button to see the selection disappear\n
+	    								 At the end of the game the score is displayed.\n\n
+	    								 Enjoy Playing!\n 
+	    							     </string>
+	<string name="word_game_paused_title">Game Paused</string>	    							     
+	<string name="pause_statement">You have currently paused the game! \n
+	    							Hit the resume button below to continue \n</string>	   
+	<string name="hintButtonText">Shuffle</string>
+	
+	<!-- Communication -->							 							     	    						
+	<string name="sendComButtonText">Send To Server</string>
+	<string name="getComButtonText">Get From Server</string>
+	<string name="communication_label">Communication</string>
+	<string name="clearButtonText">Clear</string>
+	<string name="com_send_name_button_label">Start Connection</string>
+	<string name="com_start_button_label">Send Msg To Opponent</string>
+	<string name="two_player_com_label">Two Player Experiment</string>
+	<string name="mhealth_label">MHealth Experiment</string>
+	<string name="comm_back_button_text">Back</string>
+	<string name="comm_back_main_button_text">Back To Main Menu</string>
+	<string name="comm_assignment_acknowledge_text">Following links have been useful- \n\n
+	    									GCM code is taken from google developer site \n
+	    									http://developer.android.com/google/gcm/gs.html \n\n
+	    									Http post connection in GCM \n 
+	    									http://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/  \n\n
+	    									Pending Intent and pitfalls \n 
+	    									http://pilhuhn.blogspot.com/2010/12/pitfall-in-pendingintent-with-solution.html\n\n
+	    									Check if device has Internet Connection \n
+	    									http://stackoverflow.com/questions/6493517/android-detect-if-device-has-internet-connection \n\n													    								
+	</string>
+	
+	<!-- TwoPlayerWordGame -->
+	<string name="twoPlayer_label">Two Player Word Game</string>
+	<string name="twoplayer_enterUserName">Enter User Name</string>
+	<string name="twoplayer_registerUserName">Submit User Name</string>
+	<string name="twoplayer_targetscorelabel">Enter the target score to play with opponent</string>
+	<string name="twoplayer_enterOpponentNameLabel">Search Opponent</string>
+	<string name="twoplayer_startMatchLabel">Start Match</string>
+	<string name="twoplayer_enterOpponentName">Enter the opponent userId</string>
+	<string name="twoplayer_findOpponentLabel">Find Player</string>
+	<string name="twoplayer_selectRandomPlayerLabel">Find Random Player</string>
+	<string name="twoplayer_newGameSettings">New Game Settings</string>
+	<string name="twoplayer_yourScoreLabel">Your Score:0</string>
+	<string name="twoplayer_oppScoreLabel">Opp Score:0</string>
+	<string name="twoplayer_quitWordGameLabel">Quit</string>
+	<string name="twoplayer_acknowlegementLabel">Following links have been useful- \n\n
+	    									Most of the code is combined with earlier two assignments \n
+	    									Shared preferences example code \n
+	    								    http://examples.javacodegeeks.com/android/core/content/android-sharedpreferences-example/  \n\n
+	    									Pending Intent and pitfalls \n 
+	    									http://pilhuhn.blogspot.com/2010/12/pitfall-in-pendingintent-with-solution.html\n\n
+	    									How to use shaking of phone for random player game request \n
+	    									http://jasonmcreynolds.com/?p=388 \n\n</string>
+	
+	<string name="twoplayer_instructionsLabel">Steps to play TwoPlayer Word Game \n\n
+	    								 Connect with another player\n
+	    								 Try to form bigger words to get a best score\n
+	    								 Hit check button to see if word exists\n 
+	    								 Hit clear button to see the selection disappear\n
+	    								 Player to reach the target score first wins\n
+	    								 At the end of the game the scores are displayed.\n\n
+	    								 Enjoy Playing!\n 
+	    							     </string>
+	<string name="twoplayer_randomplayerlabel">Shake the phone to connect to random player!</string>	
+	<string name="twoplayer_highScoreButtonLabel">High Scores</string>    
+	<string name="twoplayer_highScoreTextLabel">Top 5 High Scores are:</string>							     
+	<string name="trickiest_part_title_label">Trickiest Part</string>
+	<!-- Common Strings -->
+	<string name="continue_label">Continue</string>
+	<string name="new_game_label">New Game</string>
+	<string name="about_label">About</string>
+	<string name="exit_label">Exit</string>
+	<string name="quit_label">Quit</string>
+	<string name="acknowledge_label">Acknowledgements</string>
+	
+	<string name="settings_label">Settings...</string>
+	<string name="settings_shortcut">s</string>
+	<string name="music_title">Music</string>
+	<string name="music_summary">Play background music</string>
+	<string name="hints_title">Hints</string>
+	<string name="hints_summary">Show hints during play</string>
+
+	<string name="new_game_title">Difficulty</string>
+	<string name="easy_label">Easy</string>
+	<string name="medium_label">Medium</string>
+	<string name="hard_label">Hard</string>
+
+	<string name="game_title">Game</string>
+	<string name="no_moves_label">No moves</string>
+	<string name="keypad_title">Keypad</string>
+
+</resources>

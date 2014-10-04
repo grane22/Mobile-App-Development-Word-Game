@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/hello_mad_about_background">
+
+    <EditText
+        android:id="@+id/dictionaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="textNoSuggestions"
+        android:hint="Type any word...">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dictionary_clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary_clear_label"
+        android:onClick="clear" />
+
+    <Button
+        android:id="@+id/dictionary_return_to_menu_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary_return_to_menu_label"
+        android:onClick="returnToMenu" />
+
+    <Button
+        android:id="@+id/acknowledgements_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary_acknowledgements_label" 
+        android:onClick="acknowledge"/>
+
+    <TextView
+        android:id="@+id/dictionary_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:freezesText="true"/>
+    	
+
+</LinearLayout>

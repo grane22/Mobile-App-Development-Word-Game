@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@color/background"
+   android:gravity="center"
+   android:padding="30dip">
+   <TextView
+      android:text="@string/wordgame_app_name"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_marginBottom="25dip"
+      android:textSize="24.5sp" />
+   <Button
+      android:id="@+id/newgame_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/new_game_label" />
+   <Button
+      android:id="@+id/continue_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/continue_label"
+      android:visibility="gone" />
+   <Button
+      android:id="@+id/acknowledge_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/acknowledge_label" />
+   
+   <Button
+      android:id="@+id/instruction_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/word_game_play" />
+   
+   <Button
+      android:id="@+id/setting_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/word_game_settings" />
+   
+   <Button
+      android:id="@+id/exit_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/exit_label" />
+</LinearLayout>

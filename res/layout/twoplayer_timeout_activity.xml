@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@color/background"
+   android:gravity="center"
+   android:padding="30dip">
+   
+   <TextView
+      android:id="@+id/twoplayer_score_name"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_marginBottom="25dip"
+      android:textSize="24.5sp" />
+   
+   	<TableLayout 
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*">
+	   <TableRow>
+	       		   
+		   <Button
+		      android:id="@+id/twoplayer_main_menu_button"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:text="@string/main_menu_label" />
+		</TableRow>
+   </TableLayout>
+</LinearLayout>

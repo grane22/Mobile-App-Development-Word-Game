@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hello_mad_about_background"
+    android:gravity="center"
+    android:padding="10dip"
+    tools:context=".HelloMad" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/my_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:text="@string/my_name"
+                android:textSize="19.5sp" />
+
+            <TextView
+                android:id="@+id/my_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:text="@string/my_email"
+                android:textSize="18.5sp" />
+
+            <TextView
+                android:id="@+id/my_school_year_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:text="@string/my_school_year"
+                android:textSize="18.5sp" />
+
+            <TextView
+                android:id="@+id/my_degree_program_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:text="@string/my_degree_program"
+                android:textSize="18.5sp" />
+
+            <ImageView
+                android:id="@+id/my_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/display_image" />
+
+            <TextView
+                android:id="@+id/my_phone_imei_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="characters"
+                android:textSize="18.5sp" />
+        </LinearLayout>
+	</ScrollView>
+</LinearLayout>
